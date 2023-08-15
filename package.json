@@ -1,0 +1,23 @@
+{
+  "name": "pretty-log",
+  "version": "1.0.0",
+  "description": "Pretty and fast logging for javascript console logs. Useful for debugging with browser console.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philipasdf/pretty-log.git"
+  },
+  "keywords": [
+    "pretty",
+    "log"
+  ],
+  "author": "Philip Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/philipasdf/pretty-log/issues"
+  },
+  "homepage": "https://github.com/philipasdf/pretty-log#readme"
+}
