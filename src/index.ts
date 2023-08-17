@@ -1,3 +1,5 @@
+import figlet = require('figlet');
+
 class ChainableLogger {
   private isRed: boolean = false;
   private isGreen: boolean = false;
@@ -78,10 +80,6 @@ class ChainableLogger {
 
     this.resetAll();
   }
-
-  public line() {
-    console.log('------------------------------------------------');
-  }
 }
 
 const L = new ChainableLogger();
@@ -102,3 +100,30 @@ export const r = L.r.bind(L);
 export const g = L.g.bind(L);
 export const xl = L.xl.bind(L);
 export const log = L.log.bind(L);
+
+export function line() {
+  console.log('================================================');
+}
+
+export function tableFlip() {
+  L.log('(╯°□°）╯︵ ┻━┻');
+}
+
+export function tableUnflip() {
+  L.log('┬─┬ ノ( ゜-゜ノ)');
+}
+
+export function middleFinger() {
+  L.log('🖕（︶︿︶）🖕');
+}
+
+export function asciiArt(text = 'test') {
+  figlet(text, (err: Error | null, result?: string) => {
+    if (err) {
+      console.log('pretty-log unable to generate ascii art');
+      console.dir(err);
+      return;
+    }
+    console.log(result);
+  });
+}

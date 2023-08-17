@@ -57,15 +57,25 @@ L.r().xl().log()
 4. Shortcut. There is also an alias for log. You can call log without calling the instance L before.
 
 ```
-xl().log()
+log()
 ```
 
 ## other prints
 
-```
-L.line();
+For following prints you don't need the instance L. These are extra exported functions.
 
-// does console.log('------------------------------------------------');
+```
+line();
+tableFlip();
+tableUnflip();
+middleFinger();
+
+```
+
+For this one pass in a text.
+
+```
+asciiArt('')
 ```
 
 ### note for me
@@ -74,3 +84,5 @@ L.line();
 npm run build
 npm publish --access public
 ```
+
+ascii emoji arts are AI generated with CodePilot.

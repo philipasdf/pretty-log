@@ -1,6 +1,6 @@
 {
   "name": "@philipasdf/pretty-log",
-  "version": "1.1.3",
+  "version": "1.2.0",
   "description": "Pretty and fast logging for javascript console logs. Useful for debugging with browser console.",
   "main": "dist/index.js",
   "scripts": {
@@ -22,6 +22,10 @@
   },
   "homepage": "https://github.com/philipasdf/pretty-log#readme",
   "devDependencies": {
+    "@types/figlet": "^1.5.6",
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "figlet": "^1.6.0"
   }
 }
