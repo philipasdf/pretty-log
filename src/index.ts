@@ -1,5 +1,3 @@
-import figlet = require('figlet');
-
 class ChainableLogger {
   private isRed: boolean = false;
   private isGreen: boolean = false;
@@ -115,15 +113,4 @@ export function tableUnflip() {
 
 export function middleFinger() {
   L.log('🖕（︶︿︶）🖕');
-}
-
-export function asciiArt(text = 'test') {
-  figlet(text, (err: Error | null, result?: string) => {
-    if (err) {
-      console.log('pretty-log unable to generate ascii art');
-      console.dir(err);
-      return;
-    }
-    console.log(result);
-  });
 }

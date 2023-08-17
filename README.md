@@ -72,12 +72,6 @@ middleFinger();
 
 ```
 
-For this one pass in a text.
-
-```
-asciiArt('')
-```
-
 ### note for me
 
 ```
