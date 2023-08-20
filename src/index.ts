@@ -70,7 +70,7 @@ class ChainableLogger {
     const size = this.getSize();
     const message = customMessage ?? 'test';
 
-    if (object && typeof object !== 'string') {
+    if (object !== undefined && typeof object !== 'string') {
       console.log('%c ' + message + ' ', size + color, object);
     } else {
       console.log('%c ' + message + ' ', size + color);

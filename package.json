@@ -1,6 +1,6 @@
 {
   "name": "@philipasdf/pretty-log",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Pretty and fast logging for javascript console logs. Useful for debugging with browser console.",
   "main": "dist/index.js",
   "scripts": {
